@@ -4,75 +4,60 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="../css/authpage.css" />
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
       integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
       crossorigin="anonymous"
     />
-    <script src="../js/authpage.js"></script>
+    <link rel="stylesheet" href="../css/authpage.css" />
   </head>
   <body>
-    <div class="auth">
+    <div class="wrapper">
+      <div class="first"></div>
+      <div class="second"></div>
       <div class="form-box">
-        <div class="switcher">
-          <button id="signup-changer" onclick="signinChanger()">SIGN UP</button>
-          <button id="login-changer" onclick="loginChanger()">LOG IN</button>
-        </div>
-        <div id="signup-form">
+        <div class="signup">
+          <h1>SIGN UP</h1>
           <form action="">
-            <div class="form-group">
-              <label for="">Username:</label>
+            <div>
+              <label for="">Username:</label><br />
               <input
-                class="form-control"
                 type="text"
                 name="username"
-                id="username"
+                placeholder="please enter your username"
               />
             </div>
-            <div class="form-group">
-              <label for="">Email:</label>
-              <input class="form-control" type="text" name="email" id="eamil" />
-            </div>
-            <div class="form-group">
-              <label for="">Password:</label>
+            <div>
+              <label for="email">Email:</label><br />
               <input
-                class="form-control"
+                type="text"
+                name="email"
+                placeholder="please enter your email"
+              />
+            </div>
+            <div>
+              <label for="">Password:</label><br />
+              <input
                 type="password"
                 name="password"
-                id="password"
+                placeholder="please enter your password"
               />
             </div>
-            <div class="form-group">
-              <label for="">Confirm Password:</label>
+            <div>
+              <label for="">Confirm Password:</label><br />
               <input
-                class="form-control"
                 type="password"
-                name="conpass"
-                id="conpass"
+                name="password"
+                placeholder="confirm your password"
               />
             </div>
-            <div>
-              <button class="btn btn-block btn-success">submit</button>
+            <div class="signup-button">
+              <button class="btn btn-success" type="submit">submit</button>
             </div>
           </form>
         </div>
-        <div id="login-form">
-          <form action="">
-            <div class="form-group">
-              <label for="">Username:</label>
-              <input class="form-control" type="text" name="username" />
-            </div>
-            <div class="form-group">
-              <label for="">Password:</label>
-              <input class="form-control" type="password" name="password" />
-            </div>
-            <div>
-              <button class="btn btn-block btn-secondary">Login</button>
-            </div>
-          </form>
-        </div>
+        <div class="login"></div>
       </div>
     </div>
   </body>

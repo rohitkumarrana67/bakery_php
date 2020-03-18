@@ -3,63 +3,68 @@
   padding: 0;
 }
 
-.auth {
+.wrapper {
+  height: 600px;
   width: 100%;
+  display: flex;
+  position: relative;
 }
 
-.auth::after {
-  background-image: url("../img/pizza.jpg");
-  position: absolute;
-  content: "";
-  background-size: cover;
-  left: 0;
-  top: 0;
-  width: 100%;
+.first {
+  width: 50%;
   height: 100%;
-  opacity: 0.6;
+  background-color: #0062cc;
+}
+
+.second {
+  width: 50%;
+  height: 100%;
 }
 
 .form-box {
-  background: #ffffff;
-  position: relative;
-  z-index: 1;
-  width: 50%;
-  margin: 50px auto;
-  border-radius: 5%;
-  padding: 10px 20px;
-  box-shadow: 5px 10px 30px 10px black;
+  height: 70%;
+  width: 70%;
+  position: absolute;
+  left: 15%;
+  top: 15%;
+  display: flex;
+  box-shadow: 5px 5px 40px black;
 }
 
-.switcher {
-  width: 100%;
+.signup {
+  width: 50%;
+  height: 100%;
   background-color: #ffffff;
+  padding: 30px;
+}
+
+.signup input {
+  width: 90%;
+  outline: 0;
+  border-width: 0 0 1.5px;
+  border-color: black;
+  font-size: 13px;
+  padding: 0 0 2px;
+}
+
+.signup label {
+  margin: 0;
+}
+
+.signup h1 {
   text-align: center;
-  height: auto;
-  overflow: hidden;
+}
+.signup-button {
+  text-align: center;
+  padding: 20px;
 }
 
-.switcher button {
-  float: left;
-  border: none;
-  width: 50%;
-  font-size: 24px;
-}
-
-#signup-changer {
-  color: black;
-  background-color: green;
-  color: white;
-}
-
-#login-changer {
+.signup button {
   width: 50%;
 }
 
-#signup-form {
-  padding: 10px 20px;
-}
-
-#login-form {
-  padding: 10px 20px;
-  display: none;
+.login {
+  width: 50%;
+  height: 100%;
+  background-color: royalblue;
 }
