@@ -38,6 +38,19 @@
   padding: 30px;
 }
 
+.signup-switcher {
+  width: 100%;
+  background: #ffffff;
+  font-size: 28px;
+  font-weight: 400;
+  border: none;
+  outline-style: none;
+}
+
+.signup-switcher:focus {
+  outline-style: none;
+}
+
 .signup input {
   width: 90%;
   outline: 0;
@@ -56,15 +69,29 @@
 }
 .signup-button {
   text-align: center;
-  padding: 20px;
+  padding: 20px 0px;
 }
 
-.signup button {
-  width: 50%;
+.signup-button .btn {
+  width: 80% !important;
 }
-
 .login {
   width: 50%;
   height: 100%;
-  background-color: royalblue;
+  background-color: #0062cc;
+  padding: 30px;
+}
+
+.login-switcher {
+  width: 100%;
+  color: #ffffff;
+  background-color: #0062cc;
+  font-size: 28px;
+  font-weight: 400;
+  border: none;
+  outline-style: none;
+}
+
+.login-switcher:focus {
+  outline-style: none;
 }
