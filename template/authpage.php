@@ -1,4 +1,4 @@
-<?php include('validateSignUp.php'); ?>
+<?php include('../php/validateSignUp.php'); ?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -12,8 +12,31 @@
       integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="../css/authpage.css">
-    <script src="../js/authpage.js"></script>
+    <link rel="stylesheet" href="../css/authpage.css" />
+    <!-- script-->
+    <script>function loginChanger() {
+  
+  var signup = document.getElementsByClassName("signup");
+  var login = document.getElementsByClassName("login");
+  var signupSwitcher=document.getElementsByClassName("signup-switcher");
+  var loginSwitcher=document.getElementsByClassName("login-switcher");
+  signup[0].style.display = "none";
+  login[0].style.display="block";
+  signupSwitcher[0].style.display="block";
+  loginSwitcher[0].style.display="none";
+   }
+   function signupChanger() {
+  
+  var signup = document.getElementsByClassName("signup");
+  var login = document.getElementsByClassName("login");
+  var signupSwitcher=document.getElementsByClassName("signup-switcher");
+  var loginSwitcher=document.getElementsByClassName("login-switcher");
+  signup[0].style.display = "block";
+  login[0].style.display="none";
+  signupSwitcher[0].style.display="none";
+  loginSwitcher[0].style.display="block";
+   }
+</script>
   </head>
   <body>
     <div class="wrapper">
@@ -31,6 +54,7 @@
                 type="text"
                 name="username"
                 placeholder="please enter your username"
+                value="<?= $username ?>"
               />
             </div>
             <div>
@@ -40,6 +64,7 @@
                 type="text"
                 name="email"
                 placeholder="please enter your email"
+                value="<?= $email ?>"
               />
             </div>
             <div>
@@ -49,6 +74,7 @@
                 type="password"
                 name="password"
                 placeholder="please enter your password"
+                value="<?= $password ?>"
               />
             </div>
             <div>
@@ -58,6 +84,7 @@
                 type="password"
                 name="conpassword"
                 placeholder="confirm your password"
+                value="<?= $conpass ?>"
               />
             </div>
             <div class="signup-button">
@@ -101,11 +128,11 @@
         <div class="switcher">
           <div class="login-switcher">
             <p>If you have existing account</p>
-            <button>LOG IN</button>
+            <button onclick="loginChanger()">LOG IN</button>
           </div>
           <div class="signup-switcher">
             <p>If you don't have account</p>
-            <button>SIGN UP</button>
+            <button onclick="signupChanger()">SIGN UP</button>
           </div>
         </div>
       </div>
