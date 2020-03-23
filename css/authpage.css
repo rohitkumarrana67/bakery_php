@@ -38,7 +38,7 @@
   padding: 30px;
 }
 
-.signup-switcher {
+.signup-heading {
   width: 100%;
   background: #ffffff;
   font-size: 28px;
@@ -47,7 +47,7 @@
   outline-style: none;
 }
 
-.signup-switcher:focus {
+.signup-heading:focus {
   outline-style: none;
 }
 
@@ -75,23 +75,102 @@
 .signup-button .btn {
   width: 80% !important;
 }
+
 .login {
   width: 50%;
   height: 100%;
-  background-color: #0062cc;
+  background-color: #ffffff;
   padding: 30px;
+  display: none;
 }
 
-.login-switcher {
+.login-heading {
   width: 100%;
-  color: #ffffff;
-  background-color: #0062cc;
+  background: #ffffff;
   font-size: 28px;
   font-weight: 400;
   border: none;
   outline-style: none;
 }
 
-.login-switcher:focus {
+.login-heading:focus {
   outline-style: none;
+}
+
+.login input {
+  width: 90%;
+  outline: 0;
+  border-width: 0 0 1.5px;
+  border-color: black;
+  font-size: 13px;
+  padding: 0 0 2px;
+}
+
+.login label {
+  margin: 0;
+}
+
+.login h1 {
+  text-align: center;
+}
+.login-button {
+  text-align: center;
+  padding: 20px 0px;
+}
+
+.login-button .btn {
+  width: 80% !important;
+}
+.switcher {
+  width: 50%;
+  height: 100%;
+  background-color: #0062cc;
+  padding: 30px;
+  display: flex;
+  align-items: center;
+}
+
+.login-switcher {
+  color: white;
+  margin: 0 auto;
+}
+
+.login-switcher button {
+  background-color: #ffffff;
+  color: #0062cc;
+  font-weight: 600;
+  width: 100%;
+  padding: 8px;
+  border: none;
+  border-radius: 8px;
+}
+
+.login-switcher button:focus {
+  outline-style: none;
+}
+
+.signup-switcher {
+  color: white;
+  margin: 0 auto;
+  display: none;
+}
+
+.signup-switcher button {
+  background-color: #ffffff;
+  color: #0062cc;
+  font-weight: 600;
+  width: 100%;
+  padding: 8px;
+  border: none;
+  border-radius: 8px;
+}
+
+.signup-switcher button:focus {
+  outline-style: none;
+}
+
+.error {
+  color: red;
+  font-size: 50px;
+  margin-left: 12px;
 }
