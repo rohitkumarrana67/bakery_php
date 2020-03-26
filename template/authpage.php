@@ -12,31 +12,9 @@
       integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="../css/authpage.css" />
+    <link rel="stylesheet" href="../css/authpage.css?v=<?php echo time()?>" media="all"/>
     <!-- script-->
-    <script>function loginChanger() {
-  
-  var signup = document.getElementsByClassName("signup");
-  var login = document.getElementsByClassName("login");
-  var signupSwitcher=document.getElementsByClassName("signup-switcher");
-  var loginSwitcher=document.getElementsByClassName("login-switcher");
-  signup[0].style.display = "none";
-  login[0].style.display="block";
-  signupSwitcher[0].style.display="block";
-  loginSwitcher[0].style.display="none";
-   }
-   function signupChanger() {
-  
-  var signup = document.getElementsByClassName("signup");
-  var login = document.getElementsByClassName("login");
-  var signupSwitcher=document.getElementsByClassName("signup-switcher");
-  var loginSwitcher=document.getElementsByClassName("login-switcher");
-  signup[0].style.display = "block";
-  login[0].style.display="none";
-  signupSwitcher[0].style.display="none";
-  loginSwitcher[0].style.display="block";
-   }
-</script>
+    <script src = "../js/authpage.js?v=<?php echo time()?>"></script>
   </head>
   <body>
     <div class="wrapper">
@@ -137,5 +115,6 @@
         </div>
       </div>
     </div>
+    <!-- <script type="text/javascript" src="../js/authpage.js"></script> -->
   </body>
 </html>
