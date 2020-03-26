@@ -41,7 +41,7 @@
 .signup-heading {
   width: 100%;
   background: #ffffff;
-  font-size: 28px;
+  font-size: 40px;
   font-weight: 400;
   border: none;
   outline-style: none;
@@ -81,7 +81,6 @@
   height: 100%;
   background-color: #ffffff;
   padding: 30px;
-  display: none;
 }
 
 .login-heading {
@@ -145,6 +144,10 @@
   border-radius: 8px;
 }
 
+.login-switcher a {
+  text-decoration: none;
+}
+
 .login-switcher button:focus {
   outline-style: none;
 }
@@ -152,7 +155,6 @@
 .signup-switcher {
   color: white;
   margin: 0 auto;
-  display: none;
 }
 
 .signup-switcher button {
@@ -163,6 +165,10 @@
   padding: 8px;
   border: none;
   border-radius: 8px;
+}
+
+.signup-switcher a {
+  text-decoration: none;
 }
 
 .signup-switcher button:focus {

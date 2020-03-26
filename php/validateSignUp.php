@@ -10,6 +10,7 @@ $email="";
 $password="";
 $conpass="";
 
+$signup_message="";
 
 if($_SERVER["REQUEST_METHOD"]== "POST")
 {  
@@ -76,6 +77,7 @@ if($_SERVER["REQUEST_METHOD"]== "POST")
         $sql="INSERT INTO users(username,email,password) VALUES(:username,:email,:password)";
         $stmt=$pdo->prepare($sql);
         $stmt->execute(array(':username'=>$username,':email'=>$email,':password'=>$password));
+        $signup_message="YOU HAVE BEEN SUCCESSFULLY SIGNED UP, PLEASE TRY TO LOG IN!!";
     } 
     
 }
