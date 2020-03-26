@@ -8,6 +8,7 @@ body {
 
 h3{
   margin-top: 20px;
+  margin-bottom: 10px;
   text-align: center;
 }
 
@@ -71,12 +72,18 @@ h3{
   margin-top: 20px;
 }
 
-.input-fields>input{
+.form-container>input{
   width: 50%;
   margin-right: 10px;
   display: inline-block;
 }
 
-.input-fields>button{
+.form-container>button{
   float: right;
+}
+
+
+.cart-container{
+  width: 60%;
+  margin: 40px auto;
 }
