@@ -6,6 +6,10 @@ body {
   padding: 0;
 }
 
+h3{
+  margin-top: 20px;
+  text-align: center;
+}
 
 .logo-content {
   text-align: center;
@@ -23,7 +27,6 @@ body {
 }
 .nav1 {
   border-top: solid #222222 2px;
-  position: absolute;
   top: 0;
   width: 100%;
   background-color: #54c5a6;
@@ -53,4 +56,27 @@ body {
 .nav1-cart a {
   padding: 10px;
   color: white;
+}
+
+.card-outer{
+  width: 100%;
+  background-color: black;
+}
+
+.product-container{
+  padding: 18px 28px;
+}
+
+.card-holder{
+  margin-top: 20px;
+}
+
+.input-fields>input{
+  width: 50%;
+  margin-right: 10px;
+  display: inline-block;
+}
+
+.input-fields>button{
+  float: right;
 }

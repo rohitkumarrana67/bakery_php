@@ -32,5 +32,3 @@
           <a href=""><i class="fas fa-user-circle"></i></a>
         </div>
   </nav>
-</body>
-</html>
