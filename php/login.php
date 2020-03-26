@@ -20,9 +20,15 @@
          return;
     }
     else
-    {
-         header("Location: ../template/index.html");
-         return;
+    {   // fetching corresponding username for the session 
+        $sql = 'SELECT username FROM users WHERE email="'.$email.'" and password="'.$password.'"'; 
+        $result = $pdo->prepare($sql); 
+        $result->execute(); 
+        $username = $result->fetchColumn();
+        echo($username);
+        $_SESSION['username']=$username;
+        header("Location: ../template/index.html");
+        return;
     }
    }
 
