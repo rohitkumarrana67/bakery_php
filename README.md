@@ -13,4 +13,5 @@ Trying to create a small e-commerce website for Bakery Shop
 - [ ] Improving Front Page
 - [ ] Contact Page
 - [ ] Event Management Page
+- [ ] Signup & Login Page
 
