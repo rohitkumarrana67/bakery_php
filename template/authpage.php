@@ -13,10 +13,8 @@
       integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="../css/authpage.css?v=<?php echo time(); ?>">
-    <!-- script-->
-    <script src="../js/authpage.js?v=<?php echo time(); ?>">
-</script>
+    <link rel="stylesheet" href="../css/authpage.css?v=<?php echo time()?>" media="all"/>
+  
   </head>
   <body>
     <div class="wrapper">
@@ -89,5 +87,6 @@
         </div>
       </div>
     </div>
+    <!-- <script type="text/javascript" src="../js/authpage.js"></script> -->
   </body>
 </html>

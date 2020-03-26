@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="../css/index.css" />
+    <link rel="stylesheet" href="../css/index.css" media="all"/>
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
@@ -32,14 +32,14 @@
           <p class="logo">Bakery Town</p>
         </div>
         <div class=" nav1-links col-5">
-          <a href="" style="color:white">Home</a>
+          <a href="index.html" style="color:white">Home</a>
           <a href="" style="color: white">About</a>
           <a href="">Menu</a>
           <a href="">Contact</a>
           <a href="">Signup/Login</a>
         </div>
         <div class="nav1-cart col-2">
-          <a href=""><i class="fas fa-shopping-cart"></i></a>
+          <a href="cart.php"><i class="fas fa-shopping-cart"></i></a>
           <a href=""><i class="fas fa-user-circle"></i></a>
         </div>
       </nav>
@@ -59,7 +59,7 @@
             <p class="card-text">
               THE BEST CUPCAKES IN THE TOWN.
             </p>
-            <a href="#" class="btn btn-primary">CUPCAKES</a>
+            <a href="details.php?product=cupcakes>" class="btn btn-primary">CUPCAKES</a>
           </div>
         </div>
       </div>
@@ -74,7 +74,7 @@
             <p class="card-text">
               GRANDMA'S COOKIES
             </p>
-            <a href="#" class="btn btn-primary">COOKIES</a>
+            <a href="details.php?product=cookies" class="btn btn-primary">COOKIES</a>
           </div>
         </div>
       </div>
@@ -89,7 +89,7 @@
             <p class="card-text">
               BAKED WITH LOVE
             </p>
-            <a href="#" class="btn btn-primary btn-block">CAKES</a>
+            <a href="details.php?product=cakes" class="btn btn-primary btn-block">CAKES</a>
           </div>
         </div>
       </div>
@@ -104,7 +104,7 @@
             <p class="card-text">
               HEALTHY BREADS.
             </p>
-            <a href="#" class="btn btn-primary">BREADS</a>
+            <a href="details.php?product=breads" class="btn btn-primary">BREADS</a>
           </div>
         </div>
       </div>
@@ -127,10 +127,33 @@
             <p class="card-text">
               BAKED WITH LOVE
             </p>
-            <a href="#" class="btn btn-primary ">CAKES</a>
+            <a href="details.php?product=pizzas" class="btn btn-primary ">Pizzas</a>
           </div>
         </div>
       </div>
     </div>
+    
+    <h3 class="text-center features">FEATURES</h3>
+    <div class="icon-outercontainer">
+      <div class="icons-container">
+        <div class="icon1">
+          <img class="icon" src="../img/24hrs.png" alt="24hrs">
+          <p> 24 Hrs Available</p>
+        </div>
+        <div class="icon1">
+          <img class="icon" src="../img/pizza-icon.png" alt="pizza">
+          <p>Unlimited Pizza on Fridays</p>
+        </div>
+        <div class="icon1">
+          <img class="icon" src="../img/cash.png" alt="cashback">
+          <p>Cashback 100% if not satisfied</p>
+        </div>
+        <div class="icon1">
+          <img class="icon" src="../img/fast.png" alt="fast-delivery">
+          <p>Fast Delivery</p>
+        </div>
+      </div>
+    </div>
+    
   </body>
 </html>
