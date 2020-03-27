@@ -1,6 +1,6 @@
-### Bakery Website
+<h2 align = "center">Bakery Website</h2>
 
-:cake: :coffee: :pizza: :birthday: :hamburger: :cocktail:
+<p align="center">:cake: :coffee: :pizza: :birthday: :hamburger: :cocktail:</p>
 
 ### Front Page
 ![Bakery Town](https://yatharth1706.github.io/assets/bakerywebsite.PNG "Front page")
