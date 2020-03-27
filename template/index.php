@@ -63,6 +63,9 @@
             src="../img/Cupcakes.jpg"
             alt="Card image cap"
           />
+          <div class="card-body">
+            <a href="details.php?product=cupcakes" class="btn btn-primary btn-block">Cupcakes</a>
+          </div>
         </div>
       </div>
       <div class="col-md-3 col-sm-6">
@@ -72,6 +75,9 @@
             src="../img/Cookies.jpg"
             alt="Card image cap"
           />
+          <div class="card-body">
+            <a href="details.php?product=cookies" class="btn btn-primary btn-block">Cookies</a>
+          </div>
         </div>
       </div>
       <div class="col-md-3 col-sm-6">
@@ -81,6 +87,9 @@
             src="../img/cakes.jpg"
             alt="Card image cap"
           />
+          <div class="card-body">
+            <a href="details.php?product=cakes" class="btn btn-primary btn-block">Cakes</a>
+          </div>
         </div>
       </div>
       <div class="col-md-3 col-sm-6">
@@ -90,6 +99,9 @@
             src="../img/breads.jpg"
             alt="Card image cap"
           />
+          <div class="card-body">
+            <a href="details.php?product=breads" class="btn btn-primary btn-block">Breads</a>
+          </div>
         </div>
       </div>
     </div>
@@ -107,6 +119,9 @@
             src="../img/pizza.jpg"
             alt="Card image cap"
           />
+          <div class="card-body">
+            <a href="details.php?product=pizza" class="btn btn-primary">Pizzas</a>
+          </div>
         </div>
       </div>
     </div>
