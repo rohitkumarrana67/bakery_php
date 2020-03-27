@@ -34,11 +34,15 @@
           <p class="logo">Bakery Town</p>
         </div>
         <div class=" nav1-links col-5">
-          <a href="index.html" style="color:white">Home</a>
+          <a href="index.php" style="color:white">Home</a>
           <a href="" style="color: white">About</a>
           <a href="">Menu</a>
           <a href="">Contact</a>
-          <a href="authpage.php">Signup/Login</a>
+          <?php if(isset($_SESSION['username'])): echo "<a href='logout.php'>Logout</a><p class='btn btn-primary' style='margin-top: 10px'>Hello ".$_SESSION['username']."</p>"; ?>
+          
+          <?php else: echo "<a href='authpage.php'>Signup/Login</a>";?>
+
+          <?php endif; ?>
         </div>
         <div class="nav1-cart col-2">
           <a href="cart.php"><i class="fas fa-shopping-cart"></i></a>
