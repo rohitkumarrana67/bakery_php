@@ -1,4 +1,4 @@
-### Bakery Website
+### Bakery Website :cake: :coffee: :pizza: :birthday:
 
 Trying to create a small e-commerce website for Bakery Shop
 
