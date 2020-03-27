@@ -11,11 +11,18 @@
 		}
 	}
 
-	$sql = "SELECT * FROM " . $_SESSION['username'] . "_cart";
+	if(isset($_SESSION['username'])){
+		$sql = "SELECT * FROM " . $_SESSION['username'] . "_cart";	
+		$result = mysqli_query($conn,$sql);
 
-	$result = mysqli_query($conn,$sql);
+		if($result){
+			$list = mysqli_fetch_all($result,MYSQLI_ASSOC);	
+		}
+	}
+	
 
-	$list = mysqli_fetch_all($result,MYSQLI_ASSOC);
+	
+	
 
 	$total = 0;
 
@@ -40,7 +47,7 @@
 		  </thead>
 		  <tbody>
 		  	<?php $i=1; ?>
-		    <?php foreach($list as $item): ?>
+		    <?php if (isset($_SESSION['username'])): foreach($list as $item): ?>
 		    <tr>
 		    	<th scope="row"><?php echo $i; $i+=1; ?></th>
 		      	<td><?php echo $item['name'] ?></td>
@@ -52,7 +59,7 @@
 		    <?php 
 		    	$total = $total + ($item['quantity']*$item['cost']);
 		    ?>
-		    <?php endforeach; ?>
+		    <?php endforeach; endif;?>
 		    <tr>
 		    	<td colspan="5" align="right">Total</td>
 		    	<td><?php echo number_format($total,2)."Rs"; ?></td>
