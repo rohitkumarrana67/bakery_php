@@ -23,6 +23,12 @@ body {
   align-items: center;
 }
 
+.welcome{
+  position: absolute;
+  top: 500px;
+  right: 220px;
+}
+
 .banner1-content {
   color: white;
   margin: 0 100px;

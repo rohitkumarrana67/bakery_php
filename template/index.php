@@ -6,7 +6,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="../css/index.css" media="all" />
+    <link rel="stylesheet" href="../css/index.css?v=<?php echo time()?>" media="all" />
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
@@ -27,6 +27,7 @@
         </div>
       </div>
       <div class="banner-img">
+        <h4 class="welcome">Welcome <?php echo $_SESSION['username']; ?></h4>
         <img src="../img/banner2.png" alt="" />
       </div>
       <nav class="nav1 row">
@@ -38,7 +39,7 @@
           <a href="" style="color: white">About</a>
           <a href="">Menu</a>
           <a href="">Contact</a>
-          <?php if(isset($_SESSION['username'])): echo "<a href='logout.php'>Logout</a><p class='btn btn-primary' style='margin-top: 10px'>Hello ".$_SESSION['username']."</p>"; ?>
+          <?php if(isset($_SESSION['username'])): echo "<a href='logout.php'>Logout</a>"; ?>
           
           <?php else: echo "<a href='authpage.php'>Signup/Login</a>";?>
 
