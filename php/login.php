@@ -8,28 +8,26 @@
         $email=check_input($_POST['email']);
         $password=check_input($_POST['password']);
 
-    // checking the presence in the database 
-    $sql = 'SELECT count(*) FROM users WHERE email="'.$email.'" and password="'.$password.'"'; 
-    $result = $pdo->prepare($sql); 
-    $result->execute(); 
-    $number_of_rows = $result->fetchColumn();
-    if($number_of_rows==0)
-    {
-         $_SESSION['not_match_error']="email and password don't match";
-         header("Location: ../template/loginpage.php");
-         return;
-    }
-    else
-    {   // fetching corresponding username for the session 
-        $sql = 'SELECT username FROM users WHERE email="'.$email.'" and password="'.$password.'"'; 
+        // checking the presence in the database 
+        $sql = 'SELECT * FROM users WHERE email="'.$email.'"'; 
         $result = $pdo->prepare($sql); 
         $result->execute(); 
-        $username = $result->fetchColumn();
-        echo($username);
-        $_SESSION['username']=$username;
-        header("Location: ../template/index.html");
-        return;
-    }
+        
+        while($row = $result->fetch()){
+                $hashed_password = $row['password'];
+                $username = $row['username'];
+
+                if(password_verify($password,$hashed_password)){
+                    echo($username);
+                    $_SESSION['username']=$username;
+                    header("Location: ../template/index.php");
+                }else{
+                    $_SESSION['not_match_error']="email and password don't match";
+                    header("Location: ../template/loginpage.php");
+                    return;
+                }
+        }
+
    }
 
     else
