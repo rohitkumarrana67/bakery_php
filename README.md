@@ -2,7 +2,8 @@
 
 :cake: :coffee: :pizza: :birthday: :hamburger: :cocktail:
 
-Trying to create a small e-commerce website for Bakery Shop
+![Bakery Town](https://yatharth1706.github.io/assets/bakerywebsite.PNG "Front page")
+
 
 ### Steps to Run It Locally
 
