@@ -29,7 +29,7 @@
       <div class="banner-img">
         <?php if(isset($_SESSION['username'])): echo "<h4 class='welcome'>Welcome ".$_SESSION['username']."</h4>"; ?>
         <?php endif; ?>
-        <img src="../img/banner2.png" alt="" />
+        <img class="img3" src="../img/party.png" alt="" />
       </div>
       <nav class="nav1 row">
         <div class="col-5 logo-content">
