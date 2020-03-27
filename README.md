@@ -12,7 +12,7 @@
 2. Clone this Project inside c:/xampp/htdocs 
 3. Switch On Apache and MySql
 4. Go to localhost/phpmyadmin
-5. Create a Database named as **Bakery**
+5. Create a Database named as **bakery**
 6. Now go to localhost/project_name/template/index.php
 
 ### Tasks Remaining For Contributors:
