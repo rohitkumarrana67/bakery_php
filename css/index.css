@@ -23,11 +23,7 @@ body {
   align-items: center;
 }
 
-.welcome{
-  position: absolute;
-  top: 500px;
-  right: 220px;
-}
+
 
 .banner1-content {
   color: white;
@@ -103,9 +99,18 @@ body {
 }
 
 .menu-box {
+  /*background-color: black;*/
+  height: auto;
   padding: 18px 18px;
 }
 
+.card{
+  height: 300px;
+}
+
+.card-img-top{
+  height: 100%;
+}
 .row {
   margin-left: 0 !important;
   margin-right: 0 !important;

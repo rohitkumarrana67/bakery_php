@@ -22,13 +22,13 @@
     <div class="banner">
       <div class="banner1">
         <div class="banner1-content">
+          <?php if(isset($_SESSION['username'])): echo "<h4 class='welcome'>Welcome ".$_SESSION['username']."</h4>"; ?>
+          <?php endif; ?>
           <p>Covered in switness with a touch of joy and</p>
           <p>little bits of love. That's how we bake it.</p>
         </div>
       </div>
       <div class="banner-img">
-        <?php if(isset($_SESSION['username'])): echo "<h4 class='welcome'>Welcome ".$_SESSION['username']."</h4>"; ?>
-        <?php endif; ?>
         <img class="img3" src="../img/party.png" alt="" />
       </div>
       <nav class="nav1 row">
@@ -54,76 +54,42 @@
     </div>
 
     <!--Menu-->
-    <div class="menu-banner"><h1>MENU</h1></div>
+    <div class="menu-banner"><h1>PRODUCTS</h1></div>
     <div class="row menu-box">
-      <div class="col-3">
+      <div class="col-md-3 col-sm-6">
         <div class="card">
           <img
             class="card-img-top"
             src="../img/Cupcakes.jpg"
             alt="Card image cap"
           />
-          <div class="card-body">
-            <p class="card-text">
-              THE BEST CUPCAKES IN THE TOWN.
-            </p>
-            <a href="details.php?product=cupcakes>" class="btn btn-primary"
-              >CUPCAKES</a
-            >
-          </div>
         </div>
       </div>
-      <div class="col-3">
+      <div class="col-md-3 col-sm-6">
         <div class="card">
           <img
             class="card-img-top"
             src="../img/Cookies.jpg"
             alt="Card image cap"
           />
-          <div class="card-body">
-            <p class="card-text">
-              GRANDMA'S COOKIES
-            </p>
-            <a href="details.php?product=cookies" class="btn btn-primary"
-              >COOKIES</a
-            >
-          </div>
         </div>
       </div>
-      <div class="col-3">
+      <div class="col-md-3 col-sm-6">
         <div class="card">
           <img
             class="card-img-top"
             src="../img/cakes.jpg"
             alt="Card image cap"
           />
-          <div class="card-body">
-            <p class="card-text">
-              BAKED WITH LOVE
-            </p>
-            <a
-              href="details.php?product=cakes"
-              class="btn btn-primary btn-block"
-              >CAKES</a
-            >
-          </div>
         </div>
       </div>
-      <div class="col-3">
+      <div class="col-md-3 col-sm-6">
         <div class="card">
           <img
             class="card-img-top"
             src="../img/breads.jpg"
             alt="Card image cap"
           />
-          <div class="card-body">
-            <p class="card-text">
-              HEALTHY BREADS.
-            </p>
-            <a href="details.php?product=breads" class="btn btn-primary"
-              >BREADS</a
-            >
-          </div>
         </div>
       </div>
     </div>
@@ -141,14 +107,6 @@
             src="../img/pizza.jpg"
             alt="Card image cap"
           />
-          <div class="card-body">
-            <p class="card-text">
-              BAKED WITH LOVE
-            </p>
-            <a href="details.php?product=pizzas" class="btn btn-primary "
-              >Pizzas</a
-            >
-          </div>
         </div>
       </div>
     </div>
