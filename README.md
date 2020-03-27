@@ -13,7 +13,7 @@ Trying to create a small e-commerce website for Bakery Shop
 5. Create a Database named as **Bakery**
 6. Now go to localhost/project_name/template/index.php
 
-#### Tasks Remaining For Contributors:
+### Tasks Remaining For Contributors:
 
 - [ ] Seperate pages for All products fetching data from database
 - [ ] Designing Cart system
