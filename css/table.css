@@ -1,0 +1,30 @@
+.table-box {
+  width: 75%;
+  margin: 30px auto;
+}
+.thh {
+  background-color: black;
+  color: white;
+}
+
+.add-item {
+  width: 40%;
+  margin: 20px auto;
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td,
+th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: rgb(239, 243, 14);
+}

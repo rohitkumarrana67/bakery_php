@@ -34,7 +34,7 @@
           <p class="logo">Bakery Town</p>
         </div>
         <div class=" nav1-links col-5">
-          <a href="index.html" style="color:white">Home</a>
+          <a href="index.php" style="color:white">Home</a>
           <a href="" style="color: white">About</a>
           <a href="">Menu</a>
           <a href="">Contact</a>

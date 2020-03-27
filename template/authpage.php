@@ -17,6 +17,7 @@
   
   </head>
   <body>
+  <?php include("../includes/header.php") ?>
     <div class="wrapper">
 
       <div class="first"></div>

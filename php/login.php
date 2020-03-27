@@ -27,7 +27,7 @@
         $username = $result->fetchColumn();
         echo($username);
         $_SESSION['username']=$username;
-        header("Location: ../template/index.html");
+        header("Location: ../template/index.php");
         return;
     }
    }
