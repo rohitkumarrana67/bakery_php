@@ -3,7 +3,7 @@
 <p align="center">:cake: :coffee: :pizza: :birthday: :hamburger: :cocktail:</p>
 
 ### Front Page
-![Bakery Town](https://yatharth1706.github.io/assets/bakerywebsite.PNG "Front page")
+
 
 
 ### Steps to Run It Locally
