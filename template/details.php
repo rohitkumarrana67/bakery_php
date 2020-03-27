@@ -6,7 +6,7 @@
 	// in cart table there are four fields
 	// 1 id 2 name 3 cost 4 quantity
 
-	 	
+	session_start();
 	include("../php/sqldb.php");	
 	
 	if(isset($_POST['cart'])){
@@ -15,7 +15,7 @@
 		$cost = mysqli_real_escape_string($conn,$_POST['hidden_cost']);
 		$quantity = mysqli_real_escape_string($conn,$_POST['quantity']);
 
-		$sql = "INSERT INTO cart (name,cost,quantity) VALUES('$name','$cost','$quantity')";
+		$sql = "INSERT INTO ". $_SESSION['username'] . "_cart (name,cost,quantity) VALUES('$name','$cost','$quantity')";
 
 		$result = mysqli_query($conn,$sql);
 

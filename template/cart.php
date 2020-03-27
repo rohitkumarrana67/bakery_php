@@ -1,8 +1,8 @@
 <?php 
-
+	session_start();
 	include("../php/sqldb.php");
 
-	$sql = "SELECT * FROM cart";
+	$sql = "SELECT * FROM " . $_SESSION['username'] . "_cart";
 
 	$result = mysqli_query($conn,$sql);
 
