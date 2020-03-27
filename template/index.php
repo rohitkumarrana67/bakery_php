@@ -27,7 +27,8 @@
         </div>
       </div>
       <div class="banner-img">
-        <h4 class="welcome">Welcome <?php echo $_SESSION['username']; ?></h4>
+        <?php if(isset($_SESSION['username'])): echo "<h4 class='welcome'>Welcome ".$_SESSION['username']."</h4>"; ?>
+        <?php endif; ?>
         <img src="../img/banner2.png" alt="" />
       </div>
       <nav class="nav1 row">
