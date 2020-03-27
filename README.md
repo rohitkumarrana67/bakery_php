@@ -8,10 +8,10 @@ Trying to create a small e-commerce website for Bakery Shop
 - [ ] Designing Cart system
 - [ ] Create Add/Delete Products for Admin
 - [ ] Authentication
-- [ ] Session Maintainence
+- [x] Session Maintainence
 - [ ] Payment Gateway or Email confirmation
 - [ ] Improving Front Page
 - [ ] Contact Page
 - [ ] Event Management Page
-- [ ] Signup & Login Page
+- [x] Signup & Login Page
 

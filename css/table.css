@@ -12,6 +12,11 @@
   margin: 20px auto;
 }
 
+.form-box {
+  width: 60%;
+  margin: 20px auto;
+}
+
 table {
   font-family: arial, sans-serif;
   border-collapse: collapse;

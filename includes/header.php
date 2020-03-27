@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -21,11 +22,15 @@
           <p class="logo">Bakery Town</p>
         </div>
         <div class=" nav1-links col-5">
-          <a href="../template/index.html">Home</a>
+          <a href="../template/index.php">Home</a>
           <a href="#">About</a>
           <a href="#">Menu</a>
           <a href="#">Contact</a>
-          <a href="../template/authpage.php">Signup/Login</a>
+          <?php if(isset($_SESSION['username'])): echo "<a href='logout.php'>Logout</a>"; ?>
+          
+          <?php else: echo "<a href='authpage.php'>Signup/Login</a>";?>
+
+          <?php endif; ?>
         </div>
         <div class="nav1-cart col-2">
           <a href="../template/cart.php"><i class="fas fa-shopping-cart"></i></a>

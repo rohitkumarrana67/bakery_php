@@ -8,6 +8,7 @@ $conpass_error="";
 $username="";
 $email="";
 $password="";
+$hashed_password = "";
 $conpass="";
 
 $signup_message="";
@@ -48,6 +49,7 @@ if($_SERVER["REQUEST_METHOD"]== "POST")
     if($_POST['password']!="")
     { 
         $password=check_input($_POST['password']);
+        $hashed_password = password_hash($password, PASSWORD_DEFAULT);
         if(!preg_match("/^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-]).{8,}$/",$password))
         {
             $password_error="your password should have atleast 1 uppercase alphabet,1 lowercase alphabet,1 digit ,1 special character and should be atleast 8 characters";
@@ -76,7 +78,7 @@ if($_SERVER["REQUEST_METHOD"]== "POST")
     {
         $sql="INSERT INTO users(username,email,password) VALUES(:username,:email,:password)";
         $stmt=$pdo->prepare($sql);
-        $stmt->execute(array(':username'=>$username,':email'=>$email,':password'=>$password));
+        $stmt->execute(array(':username'=>$username,':email'=>$email,':password'=>$hashed_password));
         $signup_message="YOU HAVE BEEN SUCCESSFULLY SIGNED UP, PLEASE TRY TO LOG IN!!";
     } 
     

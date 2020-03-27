@@ -10,9 +10,10 @@
      <meta charset="UTF-8">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <title>Document</title>
+     <link rel="stylesheet"  href="../css/table.css">
  </head>
  <body>
-       <form  method="post">
+       <form  class="form-box"  method="post">
            <div class="form-group">
                <label for="">id:</label>
                <input class="form-control" name="id" type="number" placeholder="please enter the id">
@@ -36,6 +37,10 @@
            <div class="form-group">
                <label for="">review:</label>
                <input class="form-control" name="id" type="number" placeholder="please enter the id">
+           </div>
+           <div class="form-group">
+               <label for="">image:</label>
+               <input type="file" id="img" name="img" accept="image/*">
            </div>
            
 
