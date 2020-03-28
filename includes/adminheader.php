@@ -23,7 +23,7 @@
         <div class=" nav1-links col-5">
           <a href="../template/index.php">Home</a>
           <a href="#">Menu</a>
-          <a href="">Products</a>
+          <a href="#">Products</a>
           <a href="../template/authpage.php">Signup/Login</a>
         </div>
         <div class="nav1-cart col-2">
