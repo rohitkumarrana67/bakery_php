@@ -54,10 +54,13 @@
     </div>
 
     <!--Menu-->
-    <div class="menu-banner"><h1>PRODUCTS</h1></div>
-    <div class="row menu-box">
+    <div class="menu-banner"><h1>Products</h1></div>
+      
+
+    <div class="jumbotron">
+      <div class="row menu-box">
       <div class="col-md-3 col-sm-6">
-        <div class="card">
+        <!-- <div class="card img-circle">
           <img
             class="card-img-top"
             src="../img/Cupcakes.jpg"
@@ -66,10 +69,18 @@
           <div class="card-body">
             <a href="details.php?product=cupcakes" class="btn btn-primary btn-block">Cupcakes</a>
           </div>
+        </div> -->
+        <div class="card-holder">
+          <div class="imageholder">
+            <a href=""><img src="../img/Cupcakes.jpg"></a>
+          </div>
+          <div class="cardbody">
+            <button onclick="window.location.href = 'details.php?product=cupcakes';">CupCakes</button>
+          </div>
         </div>
       </div>
       <div class="col-md-3 col-sm-6">
-        <div class="card">
+        <!-- <div class="card">
           <img
             class="card-img-top"
             src="../img/Cookies.jpg"
@@ -78,10 +89,18 @@
           <div class="card-body">
             <a href="details.php?product=cookies" class="btn btn-primary btn-block">Cookies</a>
           </div>
+        </div> -->
+        <div class="card-holder">
+          <div class="imageholder">
+            <a href=""><img src="../img/Cookies.jpg"></a>
+          </div>
+          <div class="cardbody">
+            <button onclick="window.location.href = 'details.php?product=cookies';">Cookies</button>
+          </div>
         </div>
       </div>
       <div class="col-md-3 col-sm-6">
-        <div class="card">
+        <!-- <div class="card">
           <img
             class="card-img-top"
             src="../img/cakes.jpg"
@@ -90,10 +109,18 @@
           <div class="card-body">
             <a href="details.php?product=cakes" class="btn btn-primary btn-block">Cakes</a>
           </div>
+        </div> -->
+        <div class="card-holder">
+          <div class="imageholder">
+            <a href=""><img src="../img/cakes.jpg"></a>
+          </div>
+          <div class="cardbody">
+            <button onclick="window.location.href = 'details.php?product=cakes';">Cakes</button>
+          </div>
         </div>
       </div>
       <div class="col-md-3 col-sm-6">
-        <div class="card">
+        <!-- <div class="card">
           <img
             class="card-img-top"
             src="../img/breads.jpg"
@@ -102,18 +129,20 @@
           <div class="card-body">
             <a href="details.php?product=breads" class="btn btn-primary btn-block">Breads</a>
           </div>
+        </div> -->
+        <div class="card-holder">
+          <div class="imageholder">
+            <a href=""><img src="../img/breads.jpg"></a>
+          </div>
+          <div class="cardbody">
+            <button onclick="window.location.href = 'details.php?product=breads';">Breads</button>
+          </div>
         </div>
       </div>
     </div>
     <div class="row pizza-box">
-      <div class="col-6 pizza-content">
-        <div class="pizza-above">
-          <img src="../img/pizza1.png" alt="pizza icon" />
-          <h4>Pizza makes anything possible</h4>
-        </div>
-      </div>
-      <div class="col-6 pizza-pic">
-        <div class="card" style="width:80%; margin: 0 auto">
+      <div class="col-12 pizza-pic">
+        <!-- <div class="card" style="width:80%; margin: 0 auto">
           <img
             class="card-img-top"
             src="../img/pizza.jpg"
@@ -122,14 +151,23 @@
           <div class="card-body">
             <a href="details.php?product=pizza" class="btn btn-primary">Pizzas</a>
           </div>
+        </div> -->
+        <div class="card-holder1">
+          <div class="imageholder">
+            <a href=""><img src="../img/pizza.jpg"></a>
+          </div>
+          <div class="cardbody">
+            <button onclick="window.location.href = 'details.php?product=pizza';">Pizza</button>
+          </div>
         </div>
       </div>
     </div>
+</div>
 
-    <!-- 3rd row-->
+<div class="jumbotron jumbo2">
     <div class="row menu-box">
       <div class="col-md-3 col-sm-6">
-        <div class="card">
+        <!-- <div class="card">
           <img
             class="card-img-top"
             src="../img/pudding.jpg"
@@ -138,10 +176,18 @@
           <div class="card-body">
             <a href="details.php?product=puddings" class="btn btn-primary btn-block">Puddings</a>
           </div>
+        </div> -->
+        <div class="card-holder">
+          <div class="imageholder">
+            <a href=""><img src="../img/pudding.jpg"></a>
+          </div>
+          <div class="cardbody">
+            <button onclick="window.location.href = 'details.php?product=puddings';">Puddings</button>
+          </div>
         </div>
       </div>
       <div class="col-md-3 col-sm-6">
-        <div class="card">
+        <!-- <div class="card">
           <img
             class="card-img-top"
             src="../img/jam.jpg"
@@ -150,10 +196,18 @@
           <div class="card-body">
             <a href="details.php?product=jams" class="btn btn-primary btn-block">Jams</a>
           </div>
+        </div> -->
+        <div class="card-holder">
+          <div class="imageholder">
+            <a href=""><img src="../img/jam.jpg"></a>
+          </div>
+          <div class="cardbody">
+            <button onclick="window.location.href = 'details.php?product=jams';">Jams</button>
+          </div>
         </div>
       </div>
       <div class="col-md-3 col-sm-6">
-        <div class="card">
+        <!-- <div class="card">
           <img
             class="card-img-top"
             src="../img/pickle.jpg"
@@ -162,10 +216,18 @@
           <div class="card-body">
             <a href="details.php?product=pickles" class="btn btn-primary btn-block">Pickles</a>
           </div>
+        </div> -->
+        <div class="card-holder">
+          <div class="imageholder">
+            <a href=""><img src="../img/pickle.jpg"></a>
+          </div>
+          <div class="cardbody">
+            <button onclick="window.location.href = 'details.php?product=pickles';">Pickles</button>
+          </div>
         </div>
       </div>
       <div class="col-md-3 col-sm-6">
-        <div class="card">
+        <!-- <div class="card">
           <img
             class="card-img-top"
             src="../img/decoration.jpg"
@@ -173,6 +235,14 @@
           />
           <div class="card-body">
             <a href="details.php?product=decoration" class="btn btn-primary btn-block">decoration</a>
+          </div>
+        </div> -->
+        <div class="card-holder">
+          <div class="imageholder">
+            <a href=""><img src="../img/decoration.jpg"></a>
+          </div>
+          <div class="cardbody">
+            <button onclick="window.location.href = 'details.php?product=decoration';">Decoration</button>
           </div>
         </div>
       </div>
@@ -199,5 +269,27 @@
         </div>
       </div>
     </div>
+    </div>
+
+    <!-- 
+     -->
+
+     <div class="container-fluid footer">
+        <div class="links">
+          <a href="">Home</a>
+          <a href="">About</a>
+          <a href="">Contact US</a>
+          <a href="">Products</a>
+        </div>
+
+        <div class="social-links">
+          <i class="fa fa-github" aria-hidden="true"></i>
+          <i class="fa fa-facebook-official" aria-hidden="true"></i>
+          <i class="fa fa-google-plus-official" aria-hidden="true"></i>
+          <i class="fa fa-twitter" aria-hidden="true"></i>
+
+        </div>
+     </div>
+    
   </body>
 </html>
