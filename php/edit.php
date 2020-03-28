@@ -1,29 +1,44 @@
-<?php
+<?php 
   session_start();
   include("../includes/adminheader.php");
   require "pdo.php";
- $product=$_GET['product'];
- $id_error="";
- $title_error="";
- $cost_error="";
- $rating_error="";
- $summary_error="";
- $review_error="";
- $image_error="";
+  $pid=$_GET['id'];
 
- 
+  $id_error="";
+  $title_error="";
+  $cost_error="";
+  $rating_error="";
+  $summary_error="";
+  $review_error="";
+  $image_error=""; 
+
  $id="";
  $title="";
  $cost="";
  $rating="";
  $summary="";
  $review="";
- 
- 
+ $img="";
 
-  
- if($_SERVER["REQUEST_METHOD"]== "POST")
- {  
+ 
+  // fetching the data for the particular product it;
+  if(isset($_SESSION['product']))
+  {
+    $sql='SELECT * FROM '.$_SESSION['product'].' WHERE ID="'.$pid.'"';
+    $stmt = $pdo->prepare($sql);
+    $stmt->execute();
+    $row = $stmt->fetch();
+    $id=$row['id'];
+    $title=$row['title'];
+    $cost=$row['cost'];
+    $rating=$row['rating'];
+    $summary=$row['summary'];
+    $review=$row['reviews'];
+    $img=$row['img'];
+  }
+
+  if($_SERVER["REQUEST_METHOD"]== "POST")
+ {   
     $id=$_POST['id'];
     $title=$_POST['title'];
     $cost=$_POST['cost'];
@@ -35,19 +50,7 @@
      {
          $id_error="id is required";
      }
-     else{
-       
-        $query='Select id from '.$product.' where id="'.$_POST['id'].'"';
-        $checkUser=$pdo->query($query);
-        while($row=$checkUser->fetch(PDO::FETCH_ASSOC))
-        {
-             if($row['id']==$_POST['id'])
-             {
-                 $id_error="id already exists";
-                 
-             }
-        }  
-    }
+     
 
      if($_POST['title']=="")
      {
@@ -70,45 +73,50 @@
          $summary_error="summary is required";
      }
     
-     if(!isset($_FILES['fileToUpload']) || $_FILES['fileToUpload']['error'] == UPLOAD_ERR_NO_FILE) 
-     {
-         $image_error="please select an image";
-     }
+    
     }
    
     if($_SERVER["REQUEST_METHOD"]== "POST")
     {
-    if($id_error==""&&$title_error==""&&$cost_error==""&&$rating_error==""&&$summary_error==""&&$review_error==""&&$image_error=="")
+    if($id_error==""&&$title_error==""&&$cost_error==""&&$rating_error==""&&$summary_error==""&&$review_error=="")
     {   //uploading image into file
-        
+        if(isset($_FILES['fileToUpload']) ) {
         $target_dir = "../img/";
         $target_file = $target_dir . basename($_FILES["fileToUpload"]["name"]);
         move_uploaded_file($_FILES["fileToUpload"]["tmp_name"], $target_file);
-       
+        $img=$target_file;
+        echo($img);
+        }
         //inserting data into table
        
-        $sql='INSERT INTO '.$product.' (id,title,cost,rating,summary,reviews,img) VALUES(:id,:title,:cost,:rating,:summary,:reviews,:img)';
-        $stmt=$pdo->prepare($sql);
-        $stmt->execute(array(':id'=>(int)$_POST['id'],':title'=>$_POST['title'],':cost'=>(int)$_POST['cost'],':rating'=>(float)$_POST['rating'],':summary'=>$_POST['summary'],':reviews'=>$_POST['review'],':img'=>$target_file));
-        $_SESSION['success_add_message']="item succesfully added";
+       $sql='UPDATE '.$_SESSION['product'].' SET id=:id, title=:title, cost=:cost, rating=:rating, summary=:summary,reviews=:reviews, img=:img WHERE id="'.$pid.'"';
+       $stmt=$pdo->prepare($sql);
+       $stmt->execute(array('id'=>$_POST['id'],':title'=>$_POST['title'],':cost'=>$_POST['cost'],':rating'=>$_POST['rating'],':summary'=>$_POST['summary'],':reviews'=>$_POST['review'],':img'=>$img));
+       $_SESSION['success_edit_message']="item succesfully edited";
+    
 
     } }
 
+  ?>
 
-
- ?>
-
- <!DOCTYPE html>
- <html lang="en">
- <head>
-     <meta charset="UTF-8">
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <title>Document</title>
-     <link rel="stylesheet"  href="../css/table.css?v=<?php echo time()?>">
- </head>
- <body>
-       <form  class="form-box"  method="post"  enctype="multipart/form-data">
-           <h1> add item</h1>
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Document</title>
+      <link rel="stylesheet"  href="../css/table.css?v=<?php echo time()?>">
+      <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+         <div>
+         <form  class="form-box"  method="post"  enctype="multipart/form-data">
+           <h1> Edit item</h1>
            <div class="form-group">
                <label for="">id: </label><span><?= $id_error ?></span>
                <input class="form-control" name="id" type="number" 
@@ -143,23 +151,22 @@
            </div>
 
            <div class="form-group">
-               <button class="btn btn-success btn-block">add</button>
+               <button class="btn btn-success btn-block">Edit</button>
            </div>
            
 
        </form>
-
-       </form>
-       <?php 
-              if(isset($_SESSION['success_add_message']))
+          <?php 
+              if(isset($_SESSION['success_edit_message']))
               {
-                echo('<div class="success-msg"><h3>'.$_SESSION['success_add_message'].'</h3></div>');
-                unset($_SESSION['success_add_message']);
+                echo('<div class="success-msg"><h3>'.$_SESSION['success_edit_message'].'</h3></div>');
+                unset($_SESSION['success_edit_message']);
               }
               ?>
            <form class="form-box1"  action="product.php" method="post">
-               <input type="hidden" name="product" value="<?= $product?>" >
+               <input type="hidden" name="product" value="<?= $_SESSION['product']?>" >
                <button class="btn btn-secondary">go to product page</button>
            </form>
- </body>
- </html>
+         </div>
+  </body>
+  </html>

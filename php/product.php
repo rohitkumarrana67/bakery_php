@@ -1,7 +1,17 @@
 <?php
+   session_start();
   include("../includes/adminheader.php");
   require "pdo.php";
+  $_SESSION['product']=$_POST['product'];
 
+ // delete function for the admin
+  if ( isset($_POST['delete']) && isset($_POST['id']) ) {
+    $sql = 'DELETE FROM '.$_POST['product'].' WHERE id = :zip';
+    $stmt = $pdo->prepare($sql);
+    $stmt->execute(array(':zip' => $_POST['id']));
+   }
+
+// printing all the products
   if(isset($_POST['product']))
   {
      $sql='SELECT * FROM '.$_POST['product'];
@@ -24,6 +34,12 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <title>Document</title>
       <link rel="stylesheet" href="../css/table.css">
+      <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
   </head>
   <body>
       <div class="table-box">
@@ -52,19 +68,20 @@
                   echo("</td><td>");
                   echo($row['summary']);
                   echo("</td><td>");
-                  echo('<button>edit</button>');
+                  echo('<a class="btn btn-primary btn-block" href="edit.php?id='.$row['id'].'">edit</a>');
                   echo("</td><td>");
-                  echo('<button>delete</button>');
+                  echo('<form method="post"><input type="hidden" ');
+                  echo('name="id" value="'.$row['id'].'">');
+                  echo('<input type="hidden" name="product" value="'.$_POST['product'].'">');
+                  echo('<input class="btn btn-primary btn-block" type="submit" value="Delete" name="delete">');
+                  echo("\n</form>\n");
                   echo("</td></tr>");
 
               }
        ?>
        </table>
          <div class="add-item">
-             <form action="add.php" method="post">
-             <input type="text" name="cakes" hidden>   
-             <button class="btn btn-block btn-primary">ADD ITEM</button>
-             </form> 
+             <a class="btn btn-primary btn-block" href="add.php?product=<?php echo($_POST['product']);?>">add items</a>
         </div>
        </div>
   </body>
