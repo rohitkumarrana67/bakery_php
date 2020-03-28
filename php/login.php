@@ -2,6 +2,10 @@
   session_start();
     include("../php/sqldb.php");
     require_once 'pdo.php';
+    if(!isset($_SESSION['username']))
+    {
+      echo("please login");
+    }
 
   
     if(isset($_POST['email'])&& isset($_POST['password']))
@@ -20,6 +24,12 @@
                 if(password_verify($password,$hashed_password)){
                     echo($username);
                     $_SESSION['username']=$username;
+
+                    if($_SESSION['username']=='admin')
+                    {
+                        header("Location: ../template/admin.php");
+                        return;
+                    }
 
                      
                      $sql = "create table IF NOT EXISTS " . $_SESSION['username'] . "_cart(id INT AUTO_INCREMENT,name VARCHAR(20) NOT NULL, cost INT,quantity INT, primary key (id))";  

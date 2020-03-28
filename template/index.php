@@ -126,6 +126,58 @@
       </div>
     </div>
 
+    <!-- 3rd row-->
+    <div class="row menu-box">
+      <div class="col-md-3 col-sm-6">
+        <div class="card">
+          <img
+            class="card-img-top"
+            src="../img/pudding.jpg"
+            alt="Card image cap"
+          />
+          <div class="card-body">
+            <a href="details.php?product=puddings" class="btn btn-primary btn-block">Puddings</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6">
+        <div class="card">
+          <img
+            class="card-img-top"
+            src="../img/jam.jpg"
+            alt="Card image cap"
+          />
+          <div class="card-body">
+            <a href="details.php?product=jams" class="btn btn-primary btn-block">Jams</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6">
+        <div class="card">
+          <img
+            class="card-img-top"
+            src="../img/pickle.jpg"
+            alt="Card image cap"
+          />
+          <div class="card-body">
+            <a href="details.php?product=pickles" class="btn btn-primary btn-block">Pickles</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6">
+        <div class="card">
+          <img
+            class="card-img-top"
+            src="../img/decoration.jpg"
+            alt="Card image cap"
+          />
+          <div class="card-body">
+            <a href="details.php?product=decoration" class="btn btn-primary btn-block">decoration</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <h3 class="text-center features">FEATURES</h3>
     <div class="icon-outercontainer">
       <div class="icons-container">

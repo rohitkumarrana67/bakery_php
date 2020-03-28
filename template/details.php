@@ -8,6 +8,11 @@
 
 	session_start();
 	include("../php/sqldb.php");	
+	if(!isset($_SESSION['username']))
+	{
+	  header("Location: loginpage.php ");
+	  return;
+	}
 	
 	if(isset($_POST['cart'])){
 		// access the values of name and cost and add it to the cart

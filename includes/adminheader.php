@@ -24,7 +24,7 @@
           <a href="../template/index.html">Home</a>
           <a href="#">Menu</a>
           <a href="">Products</a>
-          <a href="../template/authpage.php">Signup/Login</a>
+          <a href="../template/logout.php">Logout</a>
         </div>
         <div class="nav1-cart col-2">
           <a href="../template/cart.php"><i class="fas fa-shopping-cart"></i></a>
