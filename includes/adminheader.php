@@ -21,7 +21,7 @@
           <p class="logo">Bakery Town</p>
         </div>
         <div class=" nav1-links col-5">
-          <a href="../template/index.html">Home</a>
+          <a href="../template/index.php">Home</a>
           <a href="#">Menu</a>
           <a href="">Products</a>
           <a href="../template/authpage.php">Signup/Login</a>
