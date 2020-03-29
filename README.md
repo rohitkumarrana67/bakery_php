@@ -14,12 +14,13 @@
 
 ### Front Page
 
-![Bakery Town](https://yatharth1706.github.io/assets/bakerywebsite.PNG "Front page")
+[Bakery Town](https://yatharth1706.github.io/assets/bakerywebsite.PNG "Front page")
 
 ### Products Page
 
 <img src="https://yatharth1706.github.io/assets/products1.PNG">
 
+<h3 align="center"> <a href="https://github.com/rohitkumarrana67/bakery_php/blob/master/IMAGES.md">More Images</a></h3>
 
 ### Tasks Remaining For Contributors:
 
