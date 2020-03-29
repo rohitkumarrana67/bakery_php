@@ -59,7 +59,7 @@
 
     <div class="jumbotron">
       <div class="row menu-box">
-      <div class="col-md-3 col-sm-6">
+      <div class="col-md-3 col-sm-6 columncard">
         <!-- <div class="card img-circle">
           <img
             class="card-img-top"
@@ -79,7 +79,7 @@
           </div>
         </div>
       </div>
-      <div class="col-md-3 col-sm-6">
+      <div class="col-md-3 col-sm-6 columncard">
         <!-- <div class="card">
           <img
             class="card-img-top"
@@ -99,7 +99,7 @@
           </div>
         </div>
       </div>
-      <div class="col-md-3 col-sm-6">
+      <div class="col-md-3 col-sm-6 columncard">
         <!-- <div class="card">
           <img
             class="card-img-top"
@@ -119,7 +119,7 @@
           </div>
         </div>
       </div>
-      <div class="col-md-3 col-sm-6">
+      <div class="col-md-3 col-sm-6 columncard">
         <!-- <div class="card">
           <img
             class="card-img-top"
@@ -141,7 +141,7 @@
       </div>
     </div>
     <div class="row pizza-box">
-      <div class="col-12 pizza-pic">
+      <div class="col-12 pizza-pic columncard">
         <!-- <div class="card" style="width:80%; margin: 0 auto">
           <img
             class="card-img-top"
@@ -166,7 +166,7 @@
 
 <div class="jumbotron jumbo2">
     <div class="row menu-box">
-      <div class="col-md-3 col-sm-6">
+      <div class="col-md-3 col-sm-6 columncard">
         <!-- <div class="card">
           <img
             class="card-img-top"
@@ -186,7 +186,7 @@
           </div>
         </div>
       </div>
-      <div class="col-md-3 col-sm-6">
+      <div class="col-md-3 col-sm-6 columncard">
         <!-- <div class="card">
           <img
             class="card-img-top"
@@ -206,7 +206,7 @@
           </div>
         </div>
       </div>
-      <div class="col-md-3 col-sm-6">
+      <div class="col-md-3 col-sm-6 columncard">
         <!-- <div class="card">
           <img
             class="card-img-top"
@@ -226,7 +226,7 @@
           </div>
         </div>
       </div>
-      <div class="col-md-3 col-sm-6">
+      <div class="col-md-3 col-sm-6 columncard">
         <!-- <div class="card">
           <img
             class="card-img-top"
