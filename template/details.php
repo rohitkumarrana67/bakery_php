@@ -1,13 +1,18 @@
 <?php
-	// make two tables one will be named as cakes and another one is cart
 	// inside cakes there are 7 input-fields
 	// 1 id(int) 2 title(varchar) 3 cost(int) 4 rating(float) 5 summary(varchar) 6 reviews(int) 7 img(varchar)
 
-	// in cart table there are four fields
-	// 1 id 2 name 3 cost 4 quantity
-
+	
+	
 	session_start();
+	
+	
+
+	
 	include("../php/sqldb.php");	
+	include("../php/items.php");	
+
+
 	if(!isset($_SESSION['username']))
 	{
 	  header("Location: loginpage.php ");
@@ -36,9 +41,7 @@
 
 	$product = $_GET['product'];
 
-	$prod = mysqli_real_escape_string($conn, $product);
-
-	$sql = "SELECT * FROM ".$prod;
+	$sql = "SELECT * FROM ".$product;
 
 	$result = mysqli_query($conn,$sql);
 

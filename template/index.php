@@ -157,7 +157,7 @@
             <a href=""><img src="../img/pizza.jpg"></a>
           </div>
           <div class="cardbody">
-            <button onclick="window.location.href = 'details.php?product=pizza';">Pizza</button>
+            <button onclick="window.location.href = 'details.php?product=pizzas';">Pizza</button>
           </div>
         </div>
       </div>
