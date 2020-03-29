@@ -18,7 +18,9 @@
 
 ### Products Page
 
-<img src="https://yatharth1706.github.io/assets/products1.PNG" width="430"/> <img src="https://yatharth1706.github.io/assets/products2.PNG" width="430"/>
+<img src="https://yatharth1706.github.io/assets/products1.PNG">
+
+<img src="https://yatharth1706.github.io/assets/products2.PNG"/>
 
 ### Products Details Page
 
