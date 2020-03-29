@@ -20,7 +20,7 @@
 
 <img src="https://yatharth1706.github.io/assets/products1.PNG">
 
-<h3 align="center"> <a href="https://github.com/rohitkumarrana67/bakery_php/blob/master/IMAGES.md">More Images</a></h3>
+<h3 align="center"> <a href="https://github.com/yatharth1706/EcomWebApp/blob/master/IMAGES.md">More Images</a></h3>
 
 ### Tasks Remaining For Contributors:
 
