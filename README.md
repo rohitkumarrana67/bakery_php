@@ -14,7 +14,7 @@
 
 ### Front Page
 
-[Bakery Town](https://yatharth1706.github.io/assets/bakerywebsite.PNG "Front page")
+![Bakery Town](https://yatharth1706.github.io/assets/bakerywebsite.PNG "Front page")
 
 ### Products Page
 
