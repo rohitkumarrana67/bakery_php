@@ -1,4 +1,5 @@
 <?php  session_start(); 
+    include("../php/userTable.php");
 ?>
 <!DOCTYPE html>
 <html lang="en">
