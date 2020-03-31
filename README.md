@@ -8,7 +8,7 @@
 2. Clone this Project inside c:/xampp/htdocs 
 3. Switch On Apache and MySql
 4. Go to localhost/phpmyadmin
-5. Create a Database named as **bakery**
+5. Make sure in your phpmyadmin you have test database by default, if its not present create database with name 'test'
 6. Now go to localhost/project_name/template/index.php
 
 
