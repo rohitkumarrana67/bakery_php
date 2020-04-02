@@ -40,7 +40,7 @@
           <a href="index.php" style="color:white">Home</a>
           <a href="" style="color: white">About</a>
           <a href="">Menu</a>
-          <a href="">Contact</a>
+          <a href="contact.php">Contact</a>
           <?php if(isset($_SESSION['username'])): echo "<a href='logout.php'>Logout</a>"; ?>
           
           <?php else: echo "<a href='authpage.php'>Signup/Login</a>";?>
